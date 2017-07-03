@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Yu.gan&#39;s Blog</title>
+  <subtitle>Focus Feedback Fix !</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-07-03T14:50:33.640Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Yu Gan</name>
+    <email>ganyu1016@gmail.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java 8 新特性</title>
+    <link href="http://yoursite.com/2017/07/03/Java%208%20%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    <id>http://yoursite.com/2017/07/03/Java 8 新特性/</id>
+    <published>2017-07-03T14:50:33.640Z</published>
+    <updated>2017-07-03T14:50:33.640Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a><strong>1.简介</strong></h2><p>毫无疑问，Java 8是Java自Java 5（发布于2004年）之后的最重要的版本。这个版本包含语言、编译器、库、工具和JVM等方面的十多个新特性。在本文中我们将学习这些新特性，并用实际的例子说明在什么场景下适合使用。<br>这个教程包含Java开发者经常面对的几类问题：</p>
+<ul>
+<li>列表内容</li>
+<li>语言</li>
+<li>列表内容</li>
+<li>编译器</li>
+<li>库</li>
+<li>工具</li>
+<li>运行时（JVM）</li>
+</ul>
+<h2 id="2-Java语言的新特性"><a href="#2-Java语言的新特性" class="headerlink" title="2. Java语言的新特性"></a><strong>2. Java语言的新特性</strong></h2><p>Java 8是Java的一个重大版本，有人认为，虽然这些新特性领Java开发人员十分期待，但同时也需要花不少精力去学习。在这一小节中，我们将介绍Java 8的大部分新特性。</p>
+<hr>
+<h2 id="2-1-Lambda表达式和函数式接口"><a href="#2-1-Lambda表达式和函数式接口" class="headerlink" title="2.1 Lambda表达式和函数式接口"></a><strong>2.1 Lambda表达式和函数式接口</strong></h2><p>Lambda表达式（也称为闭包）是Java 8中最大和最令人期待的语言改变。它允许我们将函数当成参数传递给某个方法，或者把代码本身当作数据处理：函数式开发者非常熟悉这些概念。很多JVM平台上的语言（Groovy、Scala等）从诞生之日就支持Lambda表达式，但是Java开发者没有选择，只能使用匿名内部类代替Lambda表达式。<br>Lambda的设计耗费了很多时间和很大的社区力量，最终找到一种折中的实现方案，可以实现简洁而紧凑的语言结构。最简单的Lambda表达式可由逗号分隔的参数列表、-&gt;符号和语句块组成，例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Arrays.asList( <span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"d"</span> ).forEach( e -&gt; System.out.println( e ) );</div></pre></td></tr></table></figure>
+<p>如果Lambda表达式需要更复杂的语句块，则可以使用花括号将该语句块括起来，类似于Java中的函数体，例如：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Arrays.asList( <span class="string">"a"</span>, <span class="string">"b"</span>, <span class="string">"d"</span> ).forEach( e -&gt; &#123;</div><div class="line">    System.out.print( e );</div><div class="line">&#125; );</div></pre></td></tr></table></figure>
+<h2 id="4-Streams"><a href="#4-Streams" class="headerlink" title="4. Streams"></a><strong>4. Streams</strong></h2><p><strong><em>未完待续…</em></strong></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot; title=&quot;1.简介&quot;&gt;&lt;/a&gt;&lt;strong&gt;1.简介&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;毫无疑问，Java 8是Java自Java 5（发布于2004年）之后的最重要的版本。这个
+    
+    </summary>
+    
+      <category term="开发语言" scheme="http://yoursite.com/categories/%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="-Java -编程语言" scheme="http://yoursite.com/tags/java-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello! SHANGHAI!</title>
+    <link href="http://yoursite.com/2017/07/03/Hello!%20SHANGHAI!/"/>
+    <id>http://yoursite.com/2017/07/03/Hello! SHANGHAI!/</id>
+    <published>2017-07-03T03:14:49.263Z</published>
+    <updated>2017-07-03T03:14:49.263Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="http://114.115.203.10:4000/" target="_blank" rel="external">Yu.gan’s Blog</a>! This is my handsome Blog!</p>
+<h2 id="First-Site"><a href="#First-Site" class="headerlink" title="First Site"></a>First Site</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">"I'm here."</span></div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;http://114.115.203.10:4000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Yu.gan’s Blog&lt;/a&gt;! This is my handsome Blog!&lt;/p&gt;
+&lt;h2 id=&quot;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/06/27/hello-world/"/>
+    <id>http://yoursite.com/2017/06/27/hello-world/</id>
+    <published>2017-06-27T12:02:57.928Z</published>
+    <updated>2017-06-27T12:02:57.928Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
