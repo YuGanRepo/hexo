@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-07-03T14:50:33.640Z</updated>
+  <updated>2017-07-04T01:30:50.431Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>Java 8 新特性</title>
-    <link href="http://yoursite.com/2017/07/03/Java%208%20%E6%96%B0%E7%89%B9%E6%80%A7/"/>
-    <id>http://yoursite.com/2017/07/03/Java 8 新特性/</id>
-    <published>2017-07-03T14:50:33.640Z</published>
-    <updated>2017-07-03T14:50:33.640Z</updated>
+    <link href="http://yoursite.com/2017/07/04/Java%208%20%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    <id>http://yoursite.com/2017/07/04/Java 8 新特性/</id>
+    <published>2017-07-04T01:30:50.431Z</published>
+    <updated>2017-07-04T01:30:50.431Z</updated>
     
     <content type="html"><![CDATA[<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a><strong>1.简介</strong></h2><p>毫无疑问，Java 8是Java自Java 5（发布于2004年）之后的最重要的版本。这个版本包含语言、编译器、库、工具和JVM等方面的十多个新特性。在本文中我们将学习这些新特性，并用实际的例子说明在什么场景下适合使用。<br>这个教程包含Java开发者经常面对的几类问题：</p>
 <ul>
@@ -47,10 +47,12 @@
     
     </summary>
     
-      <category term="开发语言" scheme="http://yoursite.com/categories/%E5%BC%80%E5%8F%91%E8%AF%AD%E8%A8%80/"/>
+      <category term="Java" scheme="http://yoursite.com/categories/java/"/>
     
     
-      <category term="-Java -编程语言" scheme="http://yoursite.com/tags/java-%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+      <category term="Java" scheme="http://yoursite.com/tags/java/"/>
+    
+      <category term="编程语言" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
