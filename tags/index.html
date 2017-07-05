@@ -98,7 +98,7 @@
 <meta name="description" content="Focus Feedback Fix !">
 <meta property="og:type" content="website">
 <meta property="og:title" content="All Tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta property="og:url" content="http://www.yucode.cn/tags/index.html">
 <meta property="og:site_name" content="Yu.gan&#39;s Blog">
 <meta property="og:description" content="Focus Feedback Fix !">
 <meta property="og:updated_time" content="2017-07-03T15:05:30.450Z">
@@ -113,7 +113,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":true},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -132,7 +132,7 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://www.yucode.cn/tags/"/>
 
 
 
@@ -257,6 +257,16 @@
           </a>
         </li>
       
+        
+        <li class="menu-item menu-item-commonweal">
+          <a href="/404.html" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br />
+            
+            公益404
+          </a>
+        </li>
+      
 
       
         <li class="menu-item menu-item-search">
@@ -326,7 +336,7 @@
             目前共计 2 个标签
         </div>
         <div class="tag-cloud-tags">
-          <a href="/tags/java/" style="font-size: 12px; color: #ccc">Java</a> <a href="/tags/编程语言/" style="font-size: 12px; color: #ccc">编程语言</a>
+          <a href="/tags/java/" style="font-size: 30px; color: #111">Java</a> <a href="/tags/编程语言/" style="font-size: 12px; color: #ccc">编程语言</a>
         </div>
       </div>
     
@@ -373,7 +383,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives/">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">3</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -441,6 +451,20 @@
 
         
         
+          <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+            <div class="links-of-blogroll-title">
+              <i class="fa  fa-fw fa-globe"></i>
+              Links
+            </div>
+            <ul class="links-of-blogroll-list">
+              
+                <li class="links-of-blogroll-item">
+                  <a href="http://spring4all.com/" title="Spring4All" target="_blank">Spring4All</a>
+                </li>
+              
+            </ul>
+          </div>
+        
 
         
 
@@ -503,6 +527,8 @@
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
         
+          <span id="scrollpercent"><span>0</span>%</span>
+        
       </div>
     
 
@@ -526,6 +552,8 @@
 
   
 
+
+  
 
 
 
@@ -554,6 +582,9 @@
 
   
   <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+  
+  <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
 
 
   
@@ -590,14 +621,6 @@
 
   
 
-
-  
-
-    
-      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
-    
-
-    
 
   
 
@@ -955,6 +978,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
 

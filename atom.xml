@@ -4,9 +4,9 @@
   <subtitle>Focus Feedback Fix !</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2017-07-04T01:51:05.248Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://www.yucode.cn/"/>
+  <updated>2017-07-05T09:58:33.486Z</updated>
+  <id>http://www.yucode.cn/</id>
   
   <author>
     <name>Yu Gan</name>
@@ -16,37 +16,119 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>测试评论</title>
-    <link href="http://yoursite.com/2017/07/04/%E6%B5%8B%E8%AF%95%E8%AF%84%E8%AE%BA/"/>
-    <id>http://yoursite.com/2017/07/04/测试评论/</id>
-    <published>2017-07-04T01:51:05.248Z</published>
-    <updated>2017-07-04T01:51:05.248Z</updated>
+    <title>Collectors 类的静态工厂方法</title>
+    <link href="http://www.yucode.cn/2017/07/05/Collectors%20%E7%B1%BB%E7%9A%84%E9%9D%99%E6%80%81%E5%B7%A5%E5%8E%82%E6%96%B9%E6%B3%95/"/>
+    <id>http://www.yucode.cn/2017/07/05/Collectors 类的静态工厂方法/</id>
+    <published>2017-07-05T09:58:33.486Z</published>
+    <updated>2017-07-05T09:58:33.486Z</updated>
     
-    <content type="html"><![CDATA[<ol>
-<li>测试评论</li>
-</ol>
+    <content type="html"><![CDATA[<h3 id="Collectors类的静态工厂方法"><a href="#Collectors类的静态工厂方法" class="headerlink" title="Collectors类的静态工厂方法"></a><strong><center>Collectors类的静态工厂方法<center></center></center></strong></h3><a id="more"></a>
+<table>
+<thead>
+<tr>
+<th>工厂方法</th>
+<th>返回类型</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>toList</td>
+<td>List&lt;T&gt;</td>
+<td>把流中所以项目收集到一个List</td>
+</tr>
+<tr>
+<td>toSet</td>
+<td>Set&lt;T&gt;</td>
+<td>把流中所以项目收集到一个Set , 删除重复项</td>
+</tr>
+<tr>
+<td>toCollection</td>
+<td>Collection&lt;T&gt;</td>
+<td>把流中所以项目收集到给定的供应源创建的集合</td>
+</tr>
+<tr>
+<td>counting</td>
+<td>Long</td>
+<td>计算流中元素的个数</td>
+</tr>
+<tr>
+<td>summingInt</td>
+<td>Integer</td>
+<td>对流中项目的一个整数属性求和</td>
+</tr>
+<tr>
+<td>averagingInt</td>
+<td>Double</td>
+<td>计算流中项目 Integer 属性的平均值</td>
+</tr>
+<tr>
+<td>summarizingInt</td>
+<td>IntSummaryStatistics</td>
+<td>收集关于流中项目 Integer 属性的统计值 ， 例如最大、最小、总和和平均值</td>
+</tr>
+<tr>
+<td>joining</td>
+<td>String</td>
+<td>连接对流中每个项目调用 toString 方法所生成的字符串</td>
+</tr>
+<tr>
+<td>maxBy</td>
+<td>Optional&lt;T&gt;</td>
+<td>一个包裹了流中按照给定比较器选出的最大元素的 Optional , 或如果流为空则为 Optional.empty()</td>
+</tr>
+<tr>
+<td>minBy</td>
+<td>Optional&lt;T&gt;</td>
+<td>一个包裹了流中按照给定比较器选出的最小元素的 Optional , 或如果流为空则为 Optional.empty()</td>
+</tr>
+<tr>
+<td>reducing</td>
+<td>规约操作产生的类型</td>
+<td>从一个作为累加器的初始值开始，利用 BinaryOperator 与流中元素逐个结合，从而将流规约为单个值</td>
+</tr>
+<tr>
+<td>colletingAndThen</td>
+<td>转换函数返回的类型</td>
+<td>包裹另一个收集器，对其结果应用转换函数</td>
+</tr>
+<tr>
+<td>groupingBy</td>
+<td>Map&lt;K, List&lt;T&gt;&gt;</td>
+<td>根据项目的一个属性的值对流中对项目作问组，并将属性值作为结果 Map 对键</td>
+</tr>
+<tr>
+<td>partitioningBy</td>
+<td>Map&lt;Boolean, List&lt;T&gt;&gt;</td>
+<td>根据对流中每个项目应用谓词对结果来对项目进行分区</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="部分示例"><a href="#部分示例" class="headerlink" title="部分示例"></a><strong><em>部分示例</em></strong></h3><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// toList：</span></div><div class="line">List&lt;Dish&gt; dishes = menuStream.collect(toList());</div><div class="line"></div><div class="line"><span class="comment">// toSet：</span></div><div class="line">Set&lt;Dish&gt; dishes = menuStream.collect(toSet());</div><div class="line"></div><div class="line"><span class="comment">// counting</span></div><div class="line"><span class="keyword">long</span> howManyDishes = menuStream.collect(counting());</div><div class="line"></div><div class="line"><span class="comment">// joining</span></div><div class="line">List&lt;String&gt; book = Arrays.asList(<span class="string">"Java 8"</span>, <span class="string">"In"</span>, <span class="string">"Action"</span>);</div><div class="line">String bookStr = book.stream().collect(joining());</div><div class="line"><span class="comment">// Java 8InAction</span></div><div class="line">String bookStr2 = book.stream().collect(joining(<span class="string">","</span>));</div><div class="line"><span class="comment">// Java 8,In,Action</span></div><div class="line"></div><div class="line"><span class="comment">// reducing</span></div><div class="line"><span class="keyword">int</span> totalCalories = menuStream.collect(reducing(<span class="number">0</span>, Dish::getCalories, Integer::sum))</div><div class="line"><span class="comment">// 计算所有菜的卡路里</span></div><div class="line"></div><div class="line"><span class="comment">// groupingBy</span></div><div class="line">Map&lt;Dish.Type, List&lt;Dish&gt;&gt; dishesByType = menuStream.collect(grouppingBy(Dish::getType))</div><div class="line"><span class="comment">// 按菜单类型分组</span></div></pre></td></tr></table></figure>
 ]]></content>
     
     <summary type="html">
     
-      &lt;ol&gt;
-&lt;li&gt;测试评论&lt;/li&gt;
-&lt;/ol&gt;
-
+      &lt;h3 id=&quot;Collectors类的静态工厂方法&quot;&gt;&lt;a href=&quot;#Collectors类的静态工厂方法&quot; class=&quot;headerlink&quot; title=&quot;Collectors类的静态工厂方法&quot;&gt;&lt;/a&gt;&lt;strong&gt;&lt;center&gt;Collectors类的静态工厂方法&lt;center&gt;&lt;/center&gt;&lt;/center&gt;&lt;/strong&gt;&lt;/h3&gt;
     
     </summary>
     
+      <category term="Java" scheme="http://www.yucode.cn/categories/java/"/>
+    
+    
+      <category term="Java" scheme="http://www.yucode.cn/tags/java/"/>
     
   </entry>
   
   <entry>
     <title>Java 8 新特性</title>
-    <link href="http://yoursite.com/2017/07/04/Java%208%20%E6%96%B0%E7%89%B9%E6%80%A7/"/>
-    <id>http://yoursite.com/2017/07/04/Java 8 新特性/</id>
-    <published>2017-07-04T01:30:50.431Z</published>
-    <updated>2017-07-04T01:30:50.431Z</updated>
+    <link href="http://www.yucode.cn/2017/07/04/Java%208%20%E6%96%B0%E7%89%B9%E6%80%A7/"/>
+    <id>http://www.yucode.cn/2017/07/04/Java 8 新特性/</id>
+    <published>2017-07-04T02:54:55.382Z</published>
+    <updated>2017-07-04T02:54:55.382Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a><strong>1.简介</strong></h2><p>毫无疑问，Java 8是Java自Java 5（发布于2004年）之后的最重要的版本。这个版本包含语言、编译器、库、工具和JVM等方面的十多个新特性。在本文中我们将学习这些新特性，并用实际的例子说明在什么场景下适合使用。<br>这个教程包含Java开发者经常面对的几类问题：</p>
+    <content type="html"><![CDATA[<h2 id="1-简介"><a href="#1-简介" class="headerlink" title="1.简介"></a><strong>1.简介</strong></h2><p>毫无疑问，Java 8是Java自Java 5（发布于2004年）之后的最重要的版本。这个版本包含语言、编译器、库、工具和JVM等方面的十多个新特性。在本文中我们将学习这些新特性，并用实际的例子说明在什么场景下适合使用。<br><a id="more"></a><br>这个教程包含Java开发者经常面对的几类问题：</p>
 <ul>
 <li>列表内容</li>
 <li>语言</li>
@@ -67,44 +149,23 @@
     
     <summary type="html">
     
-      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot; title=&quot;1.简介&quot;&gt;&lt;/a&gt;&lt;strong&gt;1.简介&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;毫无疑问，Java 8是Java自Java 5（发布于2004年）之后的最重要的版本。这个
+      &lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot; title=&quot;1.简介&quot;&gt;&lt;/a&gt;&lt;strong&gt;1.简介&lt;/strong&gt;&lt;/h2&gt;&lt;p&gt;毫无疑问，Java 8是Java自Java 5（发布于2004年）之后的最重要的版本。这个版本包含语言、编译器、库、工具和JVM等方面的十多个新特性。在本文中我们将学习这些新特性，并用实际的例子说明在什么场景下适合使用。&lt;br&gt;
     
     </summary>
     
-      <category term="Java" scheme="http://yoursite.com/categories/java/"/>
+      <category term="Java" scheme="http://www.yucode.cn/categories/java/"/>
     
     
-      <category term="Java" scheme="http://yoursite.com/tags/java/"/>
+      <category term="Java" scheme="http://www.yucode.cn/tags/java/"/>
     
-      <category term="编程语言" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Hello! SHANGHAI!</title>
-    <link href="http://yoursite.com/2017/07/03/Hello!%20SHANGHAI!/"/>
-    <id>http://yoursite.com/2017/07/03/Hello! SHANGHAI!/</id>
-    <published>2017-07-03T03:14:49.263Z</published>
-    <updated>2017-07-03T03:14:49.263Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="http://114.115.203.10:4000/" target="_blank" rel="external">Yu.gan’s Blog</a>! This is my handsome Blog!</p>
-<h2 id="First-Site"><a href="#First-Site" class="headerlink" title="First Site"></a>First Site</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">echo</span> <span class="string">"I'm here."</span></div></pre></td></tr></table></figure>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;Welcome to &lt;a href=&quot;http://114.115.203.10:4000/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Yu.gan’s Blog&lt;/a&gt;! This is my handsome Blog!&lt;/p&gt;
-&lt;h2 id=&quot;
-    
-    </summary>
-    
+      <category term="编程语言" scheme="http://www.yucode.cn/tags/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/06/27/hello-world/"/>
-    <id>http://yoursite.com/2017/06/27/hello-world/</id>
+    <link href="http://www.yucode.cn/2017/06/27/hello-world/"/>
+    <id>http://www.yucode.cn/2017/06/27/hello-world/</id>
     <published>2017-06-27T12:02:57.928Z</published>
     <updated>2017-06-27T12:02:57.928Z</updated>
     
